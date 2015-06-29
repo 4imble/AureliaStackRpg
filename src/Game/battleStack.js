@@ -1,6 +1,6 @@
 import Monster from "./monster";
 
-export default class MonsterStack {
+export default class BattleStack {
     constructor(eventAggregator) {
         this.eventAggregator = eventAggregator;
         
