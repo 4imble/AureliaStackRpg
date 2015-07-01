@@ -1,0 +1,13 @@
+<template>
+    <hr />
+    <div>
+        <label>Loot Stack:</label>
+        <div class="clearfix">
+            <div class="lootItem" repeat.for="lootItem of stack">
+                <div class="noselect" click.delegate="$parent.takeItem($event, lootItem)">
+                    <i class="fa fa-diamond"></i> ${lootItem.Amount}
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

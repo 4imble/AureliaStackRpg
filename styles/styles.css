@@ -29,6 +29,22 @@ body {
     float: left;
 }
 
+.lootItem{
+    width: 80px;
+    padding: 6px;
+    margin-top: 1px;
+    margin-left: 1px;
+    background-color: darkcyan;
+    color:whitesmoke;
+    font-weight: 600;
+    float: left;
+}
+
+.lootItem:hover{
+    background-color: cadetblue;
+    cursor: pointer;    
+}
+
 .noselect {
     -webkit-touch-callout: none;
     -webkit-user-select: none;

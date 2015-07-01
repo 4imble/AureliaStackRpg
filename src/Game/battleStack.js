@@ -10,9 +10,10 @@ export default class BattleStack {
             this.stack.push(monster);
         });
 
-        this.eventAggregator.subscribe('gameLoop', monster => {
+        this.eventAggregator.subscribe('gameLoop', _ => {
             if (this.stack.length) {
-                this.stack.shift();
+                let monster = this.stack.shift();
+                this.eventAggregator.publish('monsterKilled', monster);
             }
         });
     }

@@ -3,7 +3,11 @@
         <label>Timer:</label>
         <div>${timer}</div>
         
+        <label>Gold:</label>
+        <div>${playerGold}</div>
+        
         <compose view="./monsterBag.html" view-model.bind="monsterBag"></compose>
         <compose view="./battleStack.html" view-model.bind="battleStack"></compose>
+        <compose view="./lootStack.html" view-model.bind="lootStack"></compose>
     </div>
 </template>
