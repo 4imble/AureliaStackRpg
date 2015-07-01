@@ -1,0 +1,11 @@
+<template>
+    <hr />
+    <div>
+        <label>Battling Monsters:</label>
+        <div class="clearfix">
+            <div repeat.for="monster of stack" class="battleStackItem">
+                ${monster.Name}
+            </div>
+        </div>
+    </div>
+</template>

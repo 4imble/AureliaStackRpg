@@ -5,3 +5,39 @@ body {
 .page-host{
     padding-top: 60px;
 }
+
+.bagItem{
+    width: 300px;
+    padding: 6px;
+    margin-top: 1px;
+    background-color: antiquewhite;
+}
+
+.bagItem:hover{
+    background-color: beige;
+    cursor: pointer;    
+}
+
+.battleStackItem{
+    width: 80px;
+    padding: 6px;
+    margin-top: 1px;
+    margin-left: 1px;
+    background-color: coral;
+    color:whitesmoke;
+    font-weight: 600;
+    float: left;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.clearfix{
+    clear:both;
+}

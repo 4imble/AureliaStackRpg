@@ -1,0 +1,11 @@
+<template>
+    <hr />
+    <div>
+        <label>Monster Bag:</label>
+        <div class="clearfix">
+            <div class="bagItem" repeat.for="monster of bag">
+                <div class="noselect" click.delegate="$parent.useMonster(monster)">${monster.Name}</div>
+            </div>
+        </div>
+    </div>
+</template>

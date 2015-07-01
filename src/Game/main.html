@@ -3,7 +3,7 @@
         <label>Timer:</label>
         <div>${timer}</div>
         
-        <label>Battling Monsters:</label>
-        <div repeat.for="monster of battleStack.stack" >${monster.Name}</div>
+        <compose view="./monsterBag.html" view-model.bind="monsterBag"></compose>
+        <compose view="./battleStack.html" view-model.bind="battleStack"></compose>
     </div>
 </template>

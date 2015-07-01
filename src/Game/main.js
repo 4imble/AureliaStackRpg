@@ -2,6 +2,7 @@ import {inject} from 'aurelia-framework';
 import {EventAggregator} from 'aurelia-event-aggregator';
 import GameLoop from "./gameLoop";
 import BattleStack from "./battleStack";
+import MonsterBag from "./monsterBag";
  
 @inject(EventAggregator)
 export class Main {
@@ -9,6 +10,7 @@ export class Main {
         this.eventAggregator = eventAggregator;
         this.gameLoop = new GameLoop(this.eventAggregator);
         this.battleStack = new BattleStack(this.eventAggregator);
+        this.monsterBag = new MonsterBag(this.eventAggregator);
         
         this.timer = 0;
         
@@ -19,8 +21,5 @@ export class Main {
     
     activate() {
         this.gameLoop.start();
-        
-        this.battleStack.addMonster("Grumble");
-        this.battleStack.addMonster("Scrammo");
     }
 }

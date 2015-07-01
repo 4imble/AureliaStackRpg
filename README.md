@@ -10,6 +10,6 @@ You will need to run to set up the project these two commands (assuming npm and 
 - `jspm install -y`
 
 Then 
-- `grunt watch` 
+- `gulp watch` 
 
 it will output a localhost address, navigate to there to see it all running.
