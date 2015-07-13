@@ -12,9 +12,13 @@ export default class BattleStack {
 
         this.eventAggregator.subscribe('gameLoop', _ => {
             if (this.stack.length) {
-                let monster = this.stack.shift();
-                this.eventAggregator.publish('monsterKilled', monster);
+                fightMonster();
             }
         });
+        
+        fightMonster(){
+            let monster = this.stack.shift();
+            this.eventAggregator.publish('monsterKilled', monster);
+        }
     }
 }
