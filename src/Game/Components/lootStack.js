@@ -1,5 +1,5 @@
-import GoldItem from "./goldItem";
-import Dice from "./dice";
+import GoldItem from "../Entities/goldItem";
+import Dice from "../Helpers/dice";
 import _ from "lodash";
 
 export default class LootStack {

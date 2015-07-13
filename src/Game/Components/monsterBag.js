@@ -1,4 +1,4 @@
-import Monster from "./monster";
+import Monster from "../Entities/monster";
 
 export default class MonsterBag {
     constructor(eventAggregator) {

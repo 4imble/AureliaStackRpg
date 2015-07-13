@@ -1,9 +1,9 @@
 import {inject} from 'aurelia-framework';
 import {EventAggregator} from 'aurelia-event-aggregator';
-import GameLoop from "./gameLoop";
-import BattleStack from "./battleStack";
-import MonsterBag from "./monsterBag";
-import LootStack from "./lootStack";
+import GameLoop from "./Helpers/gameLoop";
+import BattleStack from "./Components/battleStack";
+import MonsterBag from "./Components/monsterBag";
+import LootStack from "./Components/lootStack";
  
 @inject(EventAggregator)
 export class Main {
