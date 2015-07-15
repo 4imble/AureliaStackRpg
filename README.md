@@ -1,4 +1,4 @@
-# AureliaStackRpg
+# Aurelia - StackRpg
 This is spike project to try and build a simple rpg game and learn Aurelia.
 
 @sammosampson is also building the same app using react. 
