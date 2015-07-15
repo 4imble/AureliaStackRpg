@@ -10,9 +10,6 @@ export class Main {
     constructor(eventAggregator) {
         this.eventAggregator = eventAggregator;
         this.gameLoop = new GameLoop(this.eventAggregator);
-        this.battleStack = new BattleStack(this.eventAggregator);
-        this.monsterBag = new MonsterBag(this.eventAggregator);
-        this.lootStack = new LootStack(this.eventAggregator);
         
         this.timer = 0;
         this.playerGold = 0;

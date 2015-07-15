@@ -1,6 +1,10 @@
+import {inject, customElement} from 'aurelia-framework';
+import {EventAggregator} from 'aurelia-event-aggregator';
 import Monster from "../Entities/monster";
 
-export default class BattleStack {
+@customElement('battle-stack')
+@inject(EventAggregator)
+export class BattleStack {
     constructor(eventAggregator) {
         this.eventAggregator = eventAggregator;
 

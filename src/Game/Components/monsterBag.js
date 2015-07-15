@@ -1,6 +1,10 @@
+import {inject, customElement} from 'aurelia-framework';
+import {EventAggregator} from 'aurelia-event-aggregator';
 import Monster from "../Entities/monster";
 
-export default class MonsterBag {
+@customElement('monster-bag')
+@inject(EventAggregator)
+export class MonsterBag {
     constructor(eventAggregator) {
         this.eventAggregator = eventAggregator;
         

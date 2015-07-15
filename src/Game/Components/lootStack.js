@@ -1,8 +1,12 @@
+import {inject, customElement} from 'aurelia-framework';
+import {EventAggregator} from 'aurelia-event-aggregator';
 import GoldItem from "../Entities/goldItem";
 import Dice from "../Helpers/dice";
 import _ from "lodash";
 
-export default class LootStack {
+@customElement('loot-stack')
+@inject(EventAggregator)
+export class LootStack {
     constructor(eventAggregator) {
         this.eventAggregator = eventAggregator;
         this.dice = new Dice();

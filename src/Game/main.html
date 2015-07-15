@@ -1,4 +1,8 @@
 <template>
+    <require from="./Components/monsterBag"></require>
+    <require from="./Components/battleStack"></require>
+    <require from="./Components/lootStack"></require>
+    
     <div>
         <label>Timer:</label>
         <div>${timer}</div>
@@ -6,8 +10,8 @@
         <label>Gold:</label>
         <div>${playerGold}</div>
         
-        <compose view="./Components/monsterBag.html" view-model.bind="monsterBag"></compose>
-        <compose view="./Components/battleStack.html" view-model.bind="battleStack"></compose>
-        <compose view="./Components/lootStack.html" view-model.bind="lootStack"></compose>
+        <monster-bag></monster-bag>
+        <battle-stack></battle-stack>
+        <loot-stack></loot-stack>
     </div>
 </template>
